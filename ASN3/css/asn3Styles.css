@@ -1,0 +1,136 @@
+/*
+    Color Palette
+
+    Cornflower Blue
+    Dark Byzantium: #623B5A
+    French Lilac: #89608E
+    Purple: rgb(85, 26, 139)
+    Tea Green: #C8FFBE
+    Tuscany: #BA9593
+
+*/
+
+body {
+    background-color: #BA9593;
+    color: #623B5A;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 3em 5em;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    background-color: #89608E;
+    border-color: #89608E;
+    border-style: ridge;
+    border-radius: .5em;
+    border-width: .5em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .5em;
+}
+
+nav a {
+    display: inline-flex;
+    justify-content: center;
+    color:#623B5A;
+    background-color: #C8FFBE;
+    border-color: #C8FFBE;
+    border-style: ridge;
+    border-radius: 1em;
+    border-width: 1em;
+    margin: 1em;
+    width: 5em;
+    padding: 0 .5em;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover, footer a:hover {
+    color: cornflowerblue;
+}
+
+
+
+#experience, #projects, #education, #credits {
+    background-color: #c8ffbe56;
+    border-color: #89608E;
+    border-style: ridge;
+    border-radius: 1em;
+    border-width: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 1em 2em 2em 2em;
+}
+
+#experience {
+    display: inline-block;
+}
+
+#experience a, #credits a {
+    color: rgb(85, 26, 139);
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    background-color: #89608E;
+    border-color: #89608E;
+    border-style: ridge;
+    border-radius: .5em;
+    border-width: .5em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em .5em;
+}
+
+footer a {
+    color:#623B5A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer p {
+    background-color: #C8FFBE;
+    border-color: #C8FFBE;
+    border-style: ridge;
+    border-radius: 1em;
+    border-width: 1em;
+    margin: 2em 1em 2em 1em;
+    width: 5em;
+    padding: 0em .5em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+footer h2 {
+    color: #C8FFBE;
+}
+
+#mini, #cycles {
+    display: flex;
+    justify-content: left;
+    min-width: 3em;
+    max-width: 30em;
+}
+
+#eve {
+    display: flex;
+    justify-content: left;
+    min-width: 2em;
+    max-width: 15em;
+}
+
+#thumbnail {
+    display: flex;
+    justify-content: left;
+    min-width: 2em;
+    max-width: 20em;
+}
