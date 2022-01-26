@@ -54,13 +54,12 @@ nav a:hover, footer a:hover {
 }
 
 
-
 #experience, #projects, #education, #credits {
-    background-color: #c8ffbe56;
+    background-color: #c8ffbe85;
     border-color: #89608E;
     border-style: ridge;
     border-radius: 1em;
-    border-width: 1em;
+    border-width: .5em;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2em;
@@ -74,6 +73,14 @@ nav a:hover, footer a:hover {
 
 #experience a, #credits a {
     color: rgb(85, 26, 139);
+}
+
+.pocketSection {
+    display: inline-block;
+}
+
+.pocketSection p {
+    float: right;
 }
 
 footer {
@@ -95,6 +102,7 @@ footer a {
     color:#623B5A;
     text-decoration: none;
     font-weight: bold;
+    margin: 2em 0;
 }
 
 footer p {
@@ -103,7 +111,8 @@ footer p {
     border-style: ridge;
     border-radius: 1em;
     border-width: 1em;
-    margin: 2em 1em 2em 1em;
+    margin: 2em 1em;
+    margin-bottom: 2em;
     width: 5em;
     padding: 0em .5em;
     margin-top: auto;
@@ -114,23 +123,47 @@ footer h2 {
     color: #C8FFBE;
 }
 
+img {
+    border-style: ridge;
+    border-radius: .2em;
+    border-width: .2em;
+    border-color: #89608E;
+    box-shadow: 4px 4px 4px #623B5A;
+}
+
 #mini, #cycles {
     display: flex;
     justify-content: left;
-    min-width: 3em;
-    max-width: 30em;
+    width: 100%;
 }
 
 #eve {
     display: flex;
     justify-content: left;
-    min-width: 2em;
-    max-width: 15em;
+    width: 100%;
 }
 
 #thumbnail {
     display: flex;
     justify-content: left;
-    min-width: 2em;
-    max-width: 20em;
+    width: 100%;
+}
+
+/*Responsiveness of images within a viewport*/
+
+@media only screen and (min-width: 700px) {
+    #mini, #cycles {
+        display: inline;
+        width: 50%;
+    }
+    
+    #eve {
+        display: inline;
+        width: 50%;
+    }
+
+    #thumbnail {
+        display: inline;
+        width: 50%;
+    }
 }
