@@ -10,11 +10,52 @@
 
 */
 
+@import url(
+    https://fonts.googleapis.com/css?family=Lobster+Two:700italic
+);
+
 body {
     background-color: #BA9593;
     color: #623B5A;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 3em 5em;
+}
+
+#skipHeader a {
+    color:#623B5A;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #C8FFBE;
+    border-color: #C8FFBE;
+    border-style: ridge;
+    border-radius: 1em;
+    border-width: 1em;
+    margin: 0 0 3em 0;
+    width: 5em;
+    padding: 0 .5em;
+}
+
+h1 {
+    font-size: 4em;
+    text-shadow: #623b5a93 0 3px 0;
+    text-align: center;
+}
+
+#top h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.fifties {
+    font-family: 'lobster two', Cambria, Georgia;
+}
+
+.content-wrapper {
+    margin: 3em auto;
+    background-color: cornsilk;
+    padding: 1em;
+    border-radius: 5em;
 }
 
 nav {
@@ -27,8 +68,7 @@ nav {
     border-style: ridge;
     border-radius: .5em;
     border-width: .5em;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding: .5em;
 }
 
@@ -41,7 +81,7 @@ nav a {
     border-style: ridge;
     border-radius: 1em;
     border-width: 1em;
-    margin: 1em;
+    margin: .7em;
     width: 5em;
     padding: 0 .5em;
     text-align: center;
@@ -49,32 +89,38 @@ nav a {
     font-weight: bold;
 }
 
-nav a:hover, footer a:hover {
+#bottomNav a {
+    margin: .7em;
+}
+
+nav a:hover, footer a:hover, #skipHeader a:hover {
     color: cornflowerblue;
 }
 
 
-
 #experience, #projects, #education, #credits {
-    background-color: #c8ffbe56;
+    background-color: #c8ffbe85;
     border-color: #89608E;
     border-style: ridge;
     border-radius: 1em;
-    border-width: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    border-width: .5em;
+    margin: 2em auto;
     padding: 1em 2em 2em 2em;
 }
 
-#experience {
-    display: inline-block;
+p, li {
+    font-size: 13pt;
+    line-height: 25px;
 }
 
 #experience a, #credits a {
     color: rgb(85, 26, 139);
 }
+
+.pocketSection {
+    display: inline-block;
+}
+
 
 footer {
     display: flex;
@@ -86,8 +132,7 @@ footer {
     border-style: ridge;
     border-radius: .5em;
     border-width: .5em;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding: 1em .5em;
 }
 
@@ -95,6 +140,7 @@ footer a {
     color:#623B5A;
     text-decoration: none;
     font-weight: bold;
+    margin: 2em 0;
 }
 
 footer p {
@@ -103,34 +149,59 @@ footer p {
     border-style: ridge;
     border-radius: 1em;
     border-width: 1em;
-    margin: 2em 1em 2em 1em;
+    margin: 2em 1em;
     width: 5em;
     padding: 0em .5em;
-    margin-top: auto;
-    margin-bottom: auto;
 }
 
 footer h2 {
     color: #C8FFBE;
+    margin: 0 auto;
+}
+
+img {
+    border-style: ridge;
+    border-radius: .2em;
+    border-width: .2em;
+    border-color: #89608E;
+    box-shadow: 4px 4px 4px #623B5A;
 }
 
 #mini, #cycles {
-    display: flex;
-    justify-content: left;
-    min-width: 3em;
-    max-width: 30em;
+    float: left;
+    width: 100%;
+    margin: 0 3em 2em 0;
 }
 
 #eve {
-    display: flex;
-    justify-content: left;
-    min-width: 2em;
-    max-width: 15em;
+    width: 100%;
 }
 
 #thumbnail {
-    display: flex;
-    justify-content: left;
-    min-width: 2em;
-    max-width: 20em;
+    float: left;
+    width: 100%;
+    margin: 0 4em 2em 0;
+}
+
+#bottomNav {
+    border: none;
+}
+
+/*Responsiveness of images within a viewport*/
+
+@media only screen and (min-width: 700px) {
+    #mini, #cycles {
+        display: inline;
+        width: 50%;
+    }
+    
+    #eve {
+        display: inline;
+        width: 50%;
+    }
+
+    #thumbnail {
+        display: inline;
+        width: 50%;
+    }
 }
